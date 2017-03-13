@@ -414,3 +414,150 @@ textarea {
   color: #333;
   float: left;
 }
+
+.fourhang {
+  background: #fff;
+}
+
+.fourhang li:nth-Child(5n) {
+  border-right: none;
+}
+
+.fourhang li {
+  float: left;
+  width: 20%;
+  height: 5.33333rem;
+  border-right: 0.04167rem #ebebeb solid;
+  border-bottom: 0.04167rem #ebebeb solid;
+  box-sizing: border-box;
+}
+
+.fourhang li img {
+  width: 2.16667rem;
+  height: 1.91667rem;
+  display: block;
+  padding-left: 1.875rem;
+  padding-top: 1.08333rem;
+}
+
+.fourhang li p {
+  height: 0.875rem;
+  font-size: 0.875rem;
+  text-align: center;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.twohang {
+  background: #fff;
+}
+
+.twohang1 {
+  background: #fff;
+  margin-top: 0.83333rem;
+}
+
+.fivehang li {
+  float: left;
+  width: 50%;
+}
+
+.fivehang li img {
+  width: 12.08333rem;
+  height: 6.04167rem;
+  display: block;
+  margin-left: 0.83333rem;
+  padding-top: 0.83333rem;
+}
+
+.sixhang {
+  background: #fff;
+  padding-left: 0.79167rem;
+  height: 15.04167rem;
+}
+
+.sixhang li {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  margin-top: 1.125rem;
+}
+
+.sixhang li img {
+  margin-left: 0.41667rem;
+  width: 7.5rem;
+  height: 7.5rem;
+  border: 0.04167rem solid #e5e5e5;
+}
+
+.sixhang li cite {
+  margin-top: 0.75rem;
+  margin-left: 0.41667rem;
+  width: 8.33333rem;
+  height: 2.08333rem;
+  display: block;
+}
+
+.sixhang li cite i {
+  display: block;
+  font-size: 0.95833rem;
+  font-style: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.sixhang li cite var {
+  display: block;
+  font-size: 0.75rem;
+  font-style: normal;
+  background: url(i/six1.png) no-repeat 0.66667rem 0.25rem;
+  background-size: 0.83333rem 0.83333rem;
+  padding-left: 2rem;
+}
+
+.sevenhang li {
+  background: #fff;
+  background-size: 100%;
+  border-bottom: 0.04167rem solid #e5e5e5;
+  padding-bottom: 1.25rem;
+}
+
+.sevenhang li img {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1.20833rem;
+  margin-top: 1.16667rem;
+}
+
+.sevenhang li .seven1 {
+  padding-top: 1.16667rem;
+}
+
+.sevenhang li .seven1 var {
+  display: block;
+  font-style: normal;
+  margin-left: 7.25rem;
+  font-size: 1.125rem;
+  background: url(i/shu.png) no-repeat 0 0.29167rem;
+  background-size: 0.91667rem 0.66667rem;
+  padding-left: 1.41667rem;
+}
+
+.sevenhang li .seven1 em {
+  display: block;
+  font-style: normal;
+  margin-left: 7.25rem;
+  font-size: 1.125rem;
+  background: url(i/shu1.png) no-repeat 0 0.29167rem;
+  background-size: 0.91667rem 0.83333rem;
+  padding-left: 1.41667rem;
+}
+
+.sevenhang li .seven1 b {
+  display: block;
+  margin-left: 7.25rem;
+  font-size: 1.125rem;
+}
