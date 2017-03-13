@@ -8,7 +8,6 @@
 	<link type="text/css" rel="stylesheet"  href="/yk/css/index.css" source="widget"/>
 	<script type="text/javascript" src="/yk/js/jquery.js" source="widget"></script>
 	<script type="text/javascript" src="/yk/js/sea.js" source="widget"></script>
-	<script type="text/javascript" src="/yk/js/vue.js" source="widget"></script>
 </head>
 <body>
 <ul class="oneul clearfix">
@@ -20,22 +19,22 @@
 	<p>我的简历</p>
 	<var id="zongy">预览简历</var>
 </div>
-<ul class="twoul" id="twoul" v-cloak>
-	<li class="oneli" id="">
+<ul class="twoul" id="twoul">
+	<li class="oneli" id="oneli">
 		<div class="jiben clearfix">
 			<var></var>
 			<em>基本信息</em>
 		</div>
 		<div class="onekuai1 clearfix" id="onek1" v-bind:class="{'class-bb': decide.work1.isB}">
 			<div class="xianjudi">
-				<input type="text" id="ula01" v-model="resume.name">
-				<input type="text" id="ula02" v-model="resume.age">
+				<input type="text" value="" id="ula01" v-model="resume.name">
+				<input type="text" value="" id="ula02" v-model="resume.age">
 				<div class="xinselect">
 					<select v-model="resume.city_live.province">
 						<option>河北省</option>
-						<option>河南省</option>
-						<option>湖北省</option>
-						<option>湖南省</option>
+						<option>河男省</option>
+						<option>河北省</option>
+						<option>河北省</option>
 					</select>
 					<cite>
 						<b>{{resume.city_live.province | typeSelect1 "选择省份"}}</b>
@@ -46,8 +45,8 @@
 					<select v-model="resume.city_live.city">
 						<option>河北省</option>
 						<option>河南省</option>
-						<option>湖北省</option>
-						<option>湖南省</option>
+						<option>河北省</option>
+						<option>河北省</option>
 					</select>
 					<cite>
 						<b>{{resume.city_live.city | typeSelect1 "选择城市"}}</b>
@@ -75,10 +74,10 @@
 				</div>
 				<div class="xinselect xin3">
 					<select v-model="resume.city_birth.province">
-						<option>北京市</option>
-						<option>上海市</option>
-						<option>天津市</option>
-						<option>南京市</option>
+						<option>河北省</option>
+						<option>河北省</option>
+						<option>河啥省</option>
+						<option>河北省</option>
 					</select>
 					<cite>
 						<b>{{resume.city_birth.province | typeSelect1 "居住省份"}}</b>
@@ -87,10 +86,10 @@
 				</div>
 				<div class="xinselect xin4">
 					<select v-model="resume.city_birth.city">
-						<option>北京市</option>
-						<option>上海市</option>
-						<option>天津市</option>
-						<option>南京市</option>
+						<option>河北省</option>
+						<option>河北省</option>
+						<option>河刘省</option>
+						<option>河北省</option>
 					</select>
 					<cite>
 						<b>{{resume.city_birth.city | typeSelect1 "居住城市"}}</b>
@@ -102,7 +101,7 @@
 				<cite>
 					<b>上传头像</b>
 				</cite>
-				<i id="onef" v-bind:class="{'cur3':lizhi.isCur3}" v-on:click="sublizhi">目前离职中</i>
+				<i id="onef">目前离职中</i>
 			</div>
 			<div class="clear"></div>
 			<div class="onebaocun clearfix">
@@ -125,7 +124,7 @@
 					</cite>
 					<span class="onespan2">
 						工作经验:<strong id="onegongzuo">{{resume.work_experience}}</strong>&nbsp;&nbsp;&nbsp;
-						目前状态:<strong id="onem">{{resume.resigned}}</strong>
+						目前状态:<strong id="onem">离职</strong>
 					</span>
 				</div>
 				<img src="images/yanghanwen.png" alt="tupian" class="onetupian"/>
@@ -151,8 +150,8 @@
 				<em>联系方式</em>
 			</div>
 			<div class="clearfix">
-				<input type="text" id="twod1" class="twod1" v-model="resume.telephone"/>
-				<input type="text" id="twod2" class="twod2" v-model="resume.email"/>
+				<input type="text" value="" id="twod1" class="twod1" v-model="resume.telephone"/>
+				<input type="text" value="" id="twod2" class="twod2" v-model="resume.email"/>
 			</div>
 			<div class="clear"></div>
 			<div class="twobaocun clearfix">
@@ -166,7 +165,7 @@
 		<div class="threek1" id="threek1" v-bind:class="{'class-aa':decide.work3.isA}">
 			<div class="twopub clearfix">
 				<var></var>
-				<em>个人形象</em>
+				<em>联系方式</em>
 				<i id="threebian" v-on:click="threebian">编辑</i>
 			</div>
 			<div class="threes clearfix">
@@ -179,10 +178,10 @@
 		<div class="threek2" id="threek2" v-bind:class="{'class-bb':decide.work3.isB}">
 			<div class="twopub clearfix">
 				<var></var>
-				<em>个人形象</em>
+				<em>联系方式</em>
 			</div>
-			<input type="text" id="threed1" class="threed1" v-model="resume.zodiac">
-			<input type="text" id="threed2" class="threed2" v-model="resume.constellation">
+			<input type="text" value="" id="threed1" class="threed1" v-model="resume.zodiac">
+			<input type="text" value="" id="threed2" class="threed2" v-model="resume.constellation">
 			<p>厘米</p>
 			<span>公斤</span>
 			<div class="twobaocun clearfix">
@@ -195,11 +194,11 @@
 		<div class="fourk1" id="fourk1" v-bind:class="{'class-aa':decide.work4.isA}">
 			<div class="twopub clearfix">
 				<var></var>
-				<em>求职意向</em>
+				<em>联系方式</em>
 				<i id="fourbian" v-on:click="fourbian">编辑</i>
 			</div>
 			<div class="foura1 clearfix">
-				<cite>期望从事行业:</cite>
+				<cite>期望行业:</cite>
 				<div class="foura11" id="fourqw1">{{resume.intent[0].industry}}</div>
 			</div>
 			<div class="foura1 clearfix">
@@ -225,7 +224,7 @@
 				<cite>销售方式:</cite>
  				<span id="fourjia1">{{{resume.intent[0].sell_mode | typeName}}}</span>
 			</div>
-			<div class="chuchai">
+			<div>
 				<strong>能否出差:</strong>
 				<b>{{resume.intent[0].business_trip | typeName1}}</b>
 			</div>
@@ -233,74 +232,74 @@
 		<div class="fourk2" id="fourk2" display="block" v-bind:class="{'class-bb':decide.work4.isB}">
 			<div class="twopub clearfix">
 				<var></var>
-				<em>求职意向</em>
+				<em>个人形象</em>
 			</div>
 			<div class="fourhy clearfix">
-				<i>期望从事行业:</i>
+				<i>期望行业前翻:</i>
 				<select class="fourselect1" v-model="resume.intent[0].industry">
 					<option>IT</option>
 					<option>互联网</option>
-					<option>软件工程师</option>
-					<option>电子信息</option>
+					<option>电话</option>
+					<option>面谈</option>
 				</select>
 			</div>
 			<div class="fourhy1 clearfix">
-				<i>期望职位:</i>
-				<input type="text" id="fourq1" v-model="resume.intent[0].position"/>
+				<i>期望行业:</i>
+				<input type="text" value="" id="fourq1" v-model="resume.intent[0].position"/>
 			</div>
 			<div class="fourhy1 clearfix">
 				<i>期望底薪:</i>
-				<input type="text" id="fourq2" v-model="resume.intent[0].salary"/>
+				<input type="text" value="" id="fourq2" v-model="resume.intent[0].salary"/>
 			</div>
 			<div class="fourhy fourhy2 clearfix">
-				<i>期望工作地区:</i>
+				<i>期望行业无法:</i>
 				<select class="fourselect2" v-model="resume.intent[0].area_province">
-					<option>北京市</option>
-					<option>河北省</option>
-					<option>天津市</option>
-					<option>上海市</option>
+					<option>IT</option>
+					<option>互联网</option>
+					<option>电话</option>
+					<option>面谈</option>
 				</select>
 				<select class="fourselect3" v-model="resume.intent[0].area_city">
-					<option>北京</option>
-					<option>天津</option>
-					<option>上海</option>
-					<option>广州</option>
+					<option>IT</option>
+					<option>互联网</option>
+					<option>电话</option>
+					<option>面谈</option>
 				</select>
 				<div class="fourx1">
-				<input type="checkbox" v-model="resume.intent[0].business_trip"/>
+				<input type="checkbox" value="" v-model="resume.intent[0].business_trip"/>
 				<label>可出差</label>
 				</div>
 			</div>
 			<div class="fourhy1 clearfix">
 				<i>期望产品:</i>
-				<input type="text" id="fourq3" v-model="resume.intent[0].production"/>
+				<input type="text" value="" id="fourq3" v-model="resume.intent[0].production"/>
 			</div>
 			<div class="fourdm1 clearfix">
 				<i>期望销售方式:</i>
 				<div class="fourdm">
 					<span>
 						<input type="checkbox" value="0" id="fourdj1" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj1">店面销售</label>
+						<label for="fourdj1">店才销售</label>
 					</span>
 					<span>
 						<input type="checkbox" value="1" id="fourdj2" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj2">渠道销售</label>
+						<label for="fourdj2">店就销售</label>
 					</span>
 					<span>
 						<input type="checkbox" value="2" id="fourdj3" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj3">电话销售</label>
+						<label for="fourdj3">店啊销售</label>
 					</span>
 					<span>
 						<input type="checkbox" value="3" id="fourdj4" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj4">网络销售</label>
+						<label for="fourdj4">店个销售</label>
 					</span>
 					<span>
 						<input type="checkbox" value="4" id="fourdj5" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj5">面访销售</label>
+						<label for="fourdj5">店一销售</label>
 					</span>
 					<span>
 						<input type="checkbox" value="5" id="fourdj6" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj6">大客户销售</label>
+						<label for="fourdj6">店了销售</label>
 					</span>
 				</div>
 			</div>
@@ -312,7 +311,7 @@
 		<div class="fourk3" id="fourk3" v-bind:class="{'class-cc':decide.work4.isC}">
 			<div class="twopub clearfix">
 				<var></var>
-				<em>求职意向</em>
+				<em>个人形象</em>
 			</div>
 			<dl class="fourdl clearfix">
 				<dt v-on:click="fourk1"></dt>
@@ -348,75 +347,55 @@
 							<em>工作经历</em>
 						</div>
 						<div class="fivein1 clearfix">
-							<input type="text" class="five-yk1 five-yk11" v-model="expItem.company"/>
-							<input type="text" class="fiveinput five-yk1 five-yk12" v-model="expItem.position"/>
+							<input type="text" value="" class="five-yk1 five-yk11" v-model="expItem.company"/>
+							<input type="text" value="" class="fiveinput five-yk1 five-yk12" v-model="expItem.position"/>
 						</div>
 						<div class="fiveselzong clearfix">
 							<div class="xinselect fivesel1">
 								<select v-model="expItem.start_year">
-									<option>2012</option>
-									<option>2013</option>
-									<option>2014</option>
-									<option>2015</option>
-									<option>2016</option>
-									<option>2017</option>
+									<option>河北省</option>
+									<option>河男省</option>
+									<option>河北省</option>
+									<option>河北省</option>
 								</select>
 								<cite>
-									<b>{{expItem.start_year | typeSelect1 "2016"}}</b>
+									<b>{{expItem.start_year}}</b>
 									<strong></strong>
 								</cite>
 							</div>
 							<div class="xinselect fivesel1">
 								<select v-model="expItem.end_year">
-									<option>1月</option>
-									<option>2月</option>
-									<option>3月</option>
-									<option>4月</option>
-									<option>5月</option>
-									<option>6月</option>
-									<option>7月</option>
-									<option>8月</option>
-									<option>9月</option>
-									<option>10月</option>
-									<option>11月</option>
-									<option>12月</option>
+									<option>河北省</option>
+									<option>河男省</option>
+									<option>河北省</option>
+									<option>河北省</option>
 								</select>
 								<cite>
-									<b>{{expItem.end_year | typeSelect1 "7月"}}</b>
+									<b>{{expItem.end_year}}</b>
 									<strong></strong>
 								</cite>
 							</div>
 							<div class="xinselect fivesel1">
 								<select v-model="expItem.sales_type">
-									<option>2012</option>
-									<option>2013</option>
-									<option>2014</option>
-									<option>2015</option>
-									<option>2016</option>
-									<option>2017</option>
+									<option>河北省</option>
+									<option>河男省</option>
+									<option>河北省</option>
+									<option>河北省</option>
 								</select>
 								<cite>
-									<b>{{expItem.sales_type | typeSelect1 "结束年份"}}</b>
+									<b>{{expItem.sales_type}}</b>
 									<strong></strong>
 								</cite>
 							</div>
 							<div class="xinselect fivesel1">
 								<select v-model="expItem.reportto">
-									<option>1月</option>
-									<option>2月</option>
-									<option>3月</option>
-									<option>4月</option>
-									<option>5月</option>
-									<option>6月</option>
-									<option>7月</option>
-									<option>8月</option>
-									<option>9月</option>
-									<option>10月</option>
-									<option>11月</option>
-									<option>12月</option>
+									<option>河北省</option>
+									<option>河男省</option>
+									<option>河俄省</option>
+									<option>河您省</option>
 								</select>
 								<cite>
-									<b>{{expItem.reportto | typeSelect1 "结束月份"}}</b>
+									<b>{{expItem.reportto}}</b>
 									<strong></strong>
 								</cite>
 							</div>
@@ -473,7 +452,7 @@
 		<div class="fourk3" id="fivek3" v-bind:class="{'class-cc':decide.work5.isC}">
 			<div class="twopub clearfix">
 				<var></var>
-				<em>工作经历</em>
+				<em>个人形象</em>
 			</div>
 			<dl class="fourdl clearfix">
 				<dt v-on:click="fivek1(-99)"></dt>
@@ -483,230 +462,6 @@
 					<span id="fivews" v-on:click="fivek1(-99)">完善个人形象</span>
 				</dd>
 			</dl>
-		</div>
-	</li>
-	<li>
-		<div class="fourk3" id="fivek3" v-bind:class="{'class-cc':decide.work6.isC}">
-			<div class="twopub clearfix">
-				<var></var>
-				<em>教育经历</em>
-			</div>
-			<dl class="fourdl clearfix">
-				<dt v-on:click="sixk1(-99)"></dt>
-				<dd>
-					<em>通过生活照展示个人形象</em>
-					<i>通过对企业的吸引力</i>
-					<span id="fivews" v-on:click="sixk1(-99)">完善个人形象</span>
-				</dd>
-			</dl>
-		</div>
-		<div class="fivek2" v-bind:class="{'class-bb':decide.work6.isB}">
-			<div class="twopub clearfix" id="fivexg1">
-				<var></var>
-				<em>教育经历</em>
-			</div>
-			<div class="fivein1 clearfix">
-				<input type="text" class="five-yk1 five-yk11" v-model="expItem1.school"/>
-				<input type="text" class="fiveinput five-yk1 five-yk12" v-model="expItem1.major"/>
-			</div>
-			<div class="fiveselzong clearfix">
-				<div class="xinselect fivesel1">
-					<select v-model="expItem1.start_year">
-						<option>2012</option>
-						<option>2013</option>
-						<option>2014</option>
-						<option>2015</option>
-						<option>2016</option>
-						<option>2017</option>
-					</select>
-					<cite>
-						<b>{{expItem1.start_year | typeSelect1 "开始年份"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-				<div class="xinselect fivesel1">
-					<select v-model="expItem1.start_month">
-						<option>1月</option>
-						<option>2月</option>
-						<option>3月</option>
-						<option>4月</option>
-						<option>5月</option>
-						<option>6月</option>
-						<option>7月</option>
-						<option>8月</option>
-						<option>9月</option>
-						<option>10月</option>
-						<option>11月</option>
-						<option>12月</option>
-					</select>
-					<cite>
-						<b>{{expItem1.start_month | typeSelect1 "开始月份"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-				<div class="xinselect fivesel1">
-					<select v-model="expItem1.end_year">
-						<option>2012</option>
-						<option>2013</option>
-						<option>2014</option>
-						<option>2015</option>
-						<option>2016</option>
-						<option>2017</option>
-					</select>
-					<cite>
-						<b>{{expItem1.end_year | typeSelect1 "结束年份"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-				<div class="xinselect fivesel1">
-					<select v-model="expItem1.end_month">
-						<option>1月</option>
-						<option>2月</option>
-						<option>3月</option>
-						<option>4月</option>
-						<option>5月</option>
-						<option>6月</option>
-						<option>7月</option>
-						<option>8月</option>
-						<option>9月</option>
-						<option>10月</option>
-						<option>11月</option>
-						<option>12月</option>
-					</select>
-					<cite>
-						<b>{{expItem1.end_month | typeSelect1 "结束月份"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-			</div>
-			<div class="xinselect fivesel1 seven1">
-				<select v-model="expItem1.level">
-					<option>大专</option>
-					<option>本科</option>
-					<option>硕士</option>
-					<option>博士</option>
-				</select>
-				<cite>
-					<b>{{expItem1.level | typeSelect1 "本科"}}</b>
-					<strong></strong>
-				</cite>
-			</div>
-			<div class="clear"></div>
-			<div class="onebaocun fivebaocun clearfix">
-				<p id="onebao5" abd="hao" v-on:click="sixbao(expItem1)">保存</p>
-				<span id="onequxiao" v-on:click="canclePerson1">取消</span>
-			</div>
-		</div>
-		<div class="fivekelong" id="fivekelong" v-bind:class="{'class-aa':decide.work6.isA}">
-			<div class="twopub clearfix" id="fivexg1">
-				<var></var>
-				<em class="fiveem">教育经历</em>
-				<i id="fivebian" v-on:click="sixtian(-100)">添加教育经历</i>
-			</div>
-			<div class="fivehou1 clearfix" v-for="item in resume.edu_history">
-				<cite>{{item.school}}</cite>
-				<em>-</em>
-				<span>{{item.major}}</span>
-				<em>-</em>
-				<span>{{item.level}}</span>
-				<b v-on:click="deletePerson1($index)">删除</b>
-				<strong class="five-bian" v-on:click="bianPerson1($index,item)">编辑</strong>
-			</div>
-		</div>
-	</li>
-	<li>
-		<div class="fourk3" id="fivek3" v-bind:class="{'class-cc':decide.work7.isC}">
-			<div class="twopub clearfix">
-				<var></var>
-				<em>英语水平</em>
-			</div>
-			<dl class="fourdl clearfix">
-				<dt v-on:click="sevenk1(-99)"></dt>
-				<dd>
-					<em>通过生活照展示个人形象</em>
-					<i>通过对企业的吸引力</i>
-					<span id="fivews" v-on:click="sevenk1(-99)">完善个人形象</span>
-				</dd>
-			</dl>
-		</div>
-		<div class="fivek2" v-bind:class="{'class-bb':decide.work7.isB}">
-			<div class="twopub clearfix" id="fivexg1">
-				<var></var>
-				<em>英语水平</em>
-			</div>
-			<div class="fivein1 clearfix">
-				<input type="text" class="five-yk1 five-yk11" v-model="expItem2.name"/>
-				<input type="text" class="fiveinput five-yk1 five-yk12" v-model="expItem2.rog"/>
-			</div>
-			<div class="fiveselzong clearfix">
-				<div class="xinselect fivesel1">
-					<select v-model="expItem2.start_year">
-						<option>较差</option>
-						<option>一般</option>
-						<option>良好</option>
-						<option>优秀</option>
-					</select>
-					<cite>
-						<b>{{expItem2.start_year | typeSelect1 "听力水平"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-				<div class="xinselect fivesel1">
-					<select v-model="expItem2.start_month">
-						<option>较差</option>
-						<option>一般</option>
-						<option>良好</option>
-						<option>优秀</option>
-					</select>
-					<cite>
-						<b>{{expItem2.start_month | typeSelect1 "阅读水平"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-				<div class="xinselect fivesel1">
-					<select v-model="expItem2.end_year">
-						<option>较差</option>
-						<option>一般</option>
-						<option>良好</option>
-						<option>优秀</option>
-					</select>
-					<cite>
-						<b>{{expItem2.end_year | typeSelect1 "口语水平"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-				<div class="xinselect fivesel1">
-					<select v-model="expItem2.end_month">
-						<option>较差</option>
-						<option>一般</option>
-						<option>良好</option>
-						<option>优秀</option>
-					</select>
-					<cite>
-						<b>{{expItem2.end_month | typeSelect1 "写作水平"}}</b>
-						<strong></strong>
-					</cite>
-				</div>
-			</div>
-			<div class="clear"></div>
-			<div class="onebaocun fivebaocun clearfix">
-				<p id="onebao5" abd="hao" v-on:click="sevenbao(expItem2)">保存</p>
-				<span id="onequxiao" v-on:click="canclePerson2">取消</span>
-			</div>
-		</div>
-		<div class="fivekelong" id="fivekelong" v-bind:class="{'class-aa':decide.work7.isA}">
-			<div class="twopub clearfix" id="fivexg1">
-				<var></var>
-				<em class="fiveem">英语水平</em>
-				<i id="fivebian" v-on:click="seventian(-100)">添加教育经历</i>
-			</div>
-			<div class="fivehou1 clearfix" v-for="item in resume.train">
-				<cite>{{item.name}}</cite>
-				<em>-</em>
-				<span>{{item.rog}}</span>
-				<b v-on:click="deletePerson2($index)">删除</b>
-				<strong class="five-bian" v-on:click="bianPerson2($index,item)">编辑</strong>
-			</div>
 		</div>
 	</li>
 </ul>
