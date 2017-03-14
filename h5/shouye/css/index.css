@@ -512,9 +512,9 @@ textarea {
   display: block;
   font-size: 0.75rem;
   font-style: normal;
-  background: url(i/six1.png) no-repeat 0.66667rem 0.25rem;
+  background: url(i/six1.png) no-repeat 0rem 0.25rem;
   background-size: 0.83333rem 0.83333rem;
-  padding-left: 2rem;
+  padding-left: 1.33333rem;
 }
 
 .sevenhang li {
