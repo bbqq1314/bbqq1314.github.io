@@ -148,6 +148,7 @@ placeholder color更改
 .oneul {
   border-bottom: 4px solid #78c8fb;
   width: 700px;
+  background: #cdcdc7;
   margin: 0 auto;
 }
 
@@ -155,6 +156,7 @@ placeholder color更改
   float: left;
   margin-left: 55px;
   line-height: 68px;
+  font-size: 16px;
 }
 
 .twoul {
@@ -1375,4 +1377,8 @@ placeholder color更改
 
 .seven1 cite b {
   width: 303px;
+}
+
+.twopubxin {
+  margin-top: 0;
 }

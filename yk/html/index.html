@@ -8,7 +8,6 @@
 	<link type="text/css" rel="stylesheet"  href="/yk/css/index.css" source="widget"/>
 	<script type="text/javascript" src="/yk/js/jquery.js" source="widget"></script>
 	<script type="text/javascript" src="/yk/js/sea.js" source="widget"></script>
-	<script type="text/javascript" src="/yk/js/vue.js" source="widget"></script>
 </head>
 <body>
 <ul class="oneul clearfix">
@@ -18,15 +17,15 @@
 </ul>
 <div class="twoul clearfix">
 	<p>我的简历</p>
-	<var id="zongy">预览简历</var>
+<!-- 	<var id="zongy">预览简历</var> -->
 </div>
 <ul class="twoul" id="twoul" v-cloak>
-	<li class="oneli" id="">
-		<div class="jiben clearfix">
-			<var></var>
-			<em>基本信息</em>
-		</div>
+	<li class="oneli">
 		<div class="onekuai1 clearfix" id="onek1" v-bind:class="{'class-bb': decide.work1.isB}">
+			<div class="twopub twopubxin clearfix">
+				<var></var>
+				<em>联系方式</em>
+			</div>
 			<div class="xianjudi">
 				<input type="text" id="ula01" v-model="resume.name">
 				<input type="text" id="ula02" v-model="resume.age">
@@ -111,6 +110,11 @@
 			</div>
 		</div>
 		<div class="onekuai2" id="onek2" v-bind:class="{'class-aa':decide.work1.isA}">
+			<div class="twopub twopubxin clearfix">
+				<var></var>
+				<em>联系方式</em>
+				<i id="twobian" v-on:click="subForm3">编辑</i>
+			</div>
 			<div class="clearfix">
 				<div class="onehanwen">
 					<span  class="onespan1 clearfix">
@@ -131,7 +135,7 @@
 				<img src="images/yanghanwen.png" alt="tupian" class="onetupian"/>
 			</div>
 		</div>
-		<div class="onebian" id="onebian" v-on:click="subForm3">编辑</div>
+	<!-- 	<div class="onebian" id="onebian" v-on:click="subForm3">编辑</div> -->
 	</li>
 	<li>
 		<div class="twok1" id="twok1" v-bind:class="{'class-aa':decide.work2.isA}">
@@ -218,11 +222,11 @@
 				<span id="fourxs2">{{resume.intent[0].salary}}</span>
 			</div>
 			<div class="foura1 clearfix">
-				<cite>期望销售产品:</cite>
+				<cite>期望运营产品:</cite>
 				<span id="fourxs3">{{resume.intent[0].production}}</span>
 			</div>
 			<div class="foura1 clearfix">
-				<cite>销售方式:</cite>
+				<cite>使用工具:</cite>
  				<span id="fourjia1">{{{resume.intent[0].sell_mode | typeName}}}</span>
 			</div>
 			<div class="chuchai">
@@ -276,31 +280,31 @@
 				<input type="text" id="fourq3" v-model="resume.intent[0].production"/>
 			</div>
 			<div class="fourdm1 clearfix">
-				<i>期望销售方式:</i>
+				<i>使用开发工具:</i>
 				<div class="fourdm">
 					<span>
 						<input type="checkbox" value="0" id="fourdj1" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj1">店面销售</label>
+						<label for="fourdj1">sublime text</label>
 					</span>
 					<span>
 						<input type="checkbox" value="1" id="fourdj2" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj2">渠道销售</label>
+						<label for="fourdj2">webStrom</label>
 					</span>
 					<span>
 						<input type="checkbox" value="2" id="fourdj3" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj3">电话销售</label>
+						<label for="fourdj3">Grunt</label>
 					</span>
 					<span>
 						<input type="checkbox" value="3" id="fourdj4" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj4">网络销售</label>
+						<label for="fourdj4">LiveReload</label>
 					</span>
 					<span>
 						<input type="checkbox" value="4" id="fourdj5" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj5">面访销售</label>
+						<label for="fourdj5">Karma</label>
 					</span>
 					<span>
 						<input type="checkbox" value="5" id="fourdj6" v-model="resume.intent[0].sell_mode"/>
-						<label for="fourdj6">大客户销售</label>
+						<label for="fourdj6">dreamwave</label>
 					</span>
 				</div>
 			</div>
@@ -319,7 +323,7 @@
 				<dd>
 					<em>通过生活照展示个人形象</em>
 					<i>通过对企业的吸引力</i>
-					<span id="fourws" v-on:click="fourk1">完善个人形象</span>
+					<span id="fourws" v-on:click="fourk1">完善求职意向</span>
 				</dd>
 			</dl>
 		</div>
@@ -480,7 +484,7 @@
 				<dd>
 					<em>通过生活照展示个人形象</em>
 					<i>通过对企业的吸引力</i>
-					<span id="fivews" v-on:click="fivek1(-99)">完善个人形象</span>
+					<span id="fivews" v-on:click="fivek1(-99)">完善工作经历</span>
 				</dd>
 			</dl>
 		</div>
@@ -496,7 +500,7 @@
 				<dd>
 					<em>通过生活照展示个人形象</em>
 					<i>通过对企业的吸引力</i>
-					<span id="fivews" v-on:click="sixk1(-99)">完善个人形象</span>
+					<span id="fivews" v-on:click="sixk1(-99)">完善教育经历</span>
 				</dd>
 			</dl>
 		</div>
@@ -625,7 +629,7 @@
 				<dd>
 					<em>通过生活照展示个人形象</em>
 					<i>通过对企业的吸引力</i>
-					<span id="fivews" v-on:click="sevenk1(-99)">完善个人形象</span>
+					<span id="fivews" v-on:click="sevenk1(-99)">完善英语水平</span>
 				</dd>
 			</dl>
 		</div>
