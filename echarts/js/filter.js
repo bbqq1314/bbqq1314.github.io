@@ -1,2 +1,0 @@
-/* filter.js Date:2017-04-06 16:34:54 */
-define("js/filter.js",["vue.js"],function(require,a,b){require("vue.js");var c={filter:function(){var a={0:"sublimetext ",1:"webStrom ",2:"Grunt ",3:"liveReload ",4:"karma ",5:"dreamwave "};Vue.filter("typeName",function(b){var c="";return $.each(b,function(b,d){c+="<b>"+a[d]+"</b>"}),c});var b={0:"\u53ef\u51fa\u5dee",1:"\u4e0d\u53ef\u51fa\u5dee"};Vue.filter("typeName1",function(a){return 1==a?b[0]:b[1]});Vue.filter("typeSelect1",function(a,b){return console.log(a),""==a?b:a})}};b.exports={filter:c.filter}});
