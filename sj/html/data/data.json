@@ -1,0 +1,88 @@
+{
+    "_id" : "",
+    "name":"杨坤",
+    "sex" :"男",
+    "age" : "25",
+    "avatar": "/asets/images/img.png",
+    "birthday": "198-09-09",
+    "constellation":"63kg",
+    "zodiac":"178cm",
+    "city_live" : {
+        "province" : "北京市",
+        "city" : "丰台区"
+    },
+    "city_birth" : {
+        "province":"河北省",
+        "city":"衡水市"
+    },
+    "resigned" : "在职",
+    "telephone" : "15110289767",
+    "email":"1164192896@qq.com",
+    "work_experience" : "一年",
+    "intent": [
+        {
+            "industry": "软件工程师",
+            "position": "web前端工程师",
+            "area_province": "北京市",
+            "area_city": "北京",
+            "salary": "8k-10k",
+            "production": "production",
+            "sell_mode": ["0"],
+            "business_trip": "false"
+        }
+    ],
+    "language": [
+        {
+            "category":"英语",
+            "listen": "听力",
+            "speak": "口语",
+            "read": "阅读",
+            "write": "写作"
+        },
+        {
+            "category":"英语",
+            "listen": "听力",
+            "speak": "口语",
+            "read": "阅读",
+            "write": "写作"
+        }
+    ],
+    "work_history": [
+        {
+            "company":"新航路科技有限公司",
+            "position":"web前端工程师",
+            "start_year":"",
+            "end_year":"",
+            "sales_type":"",
+            "reportto":"",
+            "subordinate":"",
+            "desc":"",
+            "sales_year":"2",
+            "finish_rate":"",
+            "productions":"",
+            "sell_target":"",
+            "sell_mode":""
+        }
+    ],
+    "edu_history": [
+        {
+            "school":"河北科技师范学院",
+            "major":"园林",
+            "level":"本科",
+            "start_year":"开始时间",
+            "start_month":"",
+            "end_year":"线束时间：",
+            "end_month":""
+        }
+    ],
+    "train":[
+        {
+        "name":"英语",
+        "rog":"大学四级",
+        "start_year":"优秀",
+        "start_month":"优秀",
+        "end_year":"良好",
+        "end_month":"优秀"
+        }
+    ]
+}
