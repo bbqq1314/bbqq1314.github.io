@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content=""/>
+<meta name="description" content="" />
+<title>找销网</title>
+<link rel="stylesheet" href="/css/index01.css">
+</head>
+<body>
+<div class="header-box">
+	<div class="header">
+		<div class="m clearfix">
+			<a href="#" class="logo">
+			<img src="images/logo.png" alt="logo">
+		</a>
+		<ul class="header-nav">
+			<li><a href="#">简历管理</a></li>
+			<li><a href="#">公司主页</a></li>
+			<li><a href="#">发布职位</a></li>
+			<li><a href="#">职位管理</a></li>
+		</ul>
+		<a href="javascript" class="dl">
+			<span>王成伟</span><var></var>
+		</a>
+		</div>
+	</div>
+</div>
+<div class="bc m">
+	<span>完善你的公司主页，吸引更多人才</span>
+	<div class="bc-btn">
+		<input type="button" id="bc-btn" value="保存">
+		<a href="javascript">取消</a>
+	</div>
+</div>
+<div class="gs-box m clearfix">
+	<div class="gs-l">
+		<div class="gs-logo">
+			<img src="images/logo-bg.png" alt="">
+			<a class="scbtn" href="javascipt">上传LOGO</a>
+		</div>
+		<ul class="gs-cont" id="gs-cont">
+			<li class="clearfix">
+				<span>公司简称：</span>
+				<input type="text" value="请输入简称">
+				<var></var>
+			</li >
+			<li class="clearfix">
+				<span>公司全称：</span><input type="text" value="北京九逸英才管理咨询有限公司">
+				<var></var>
+			</li>
+			<li class="clearfix">
+				<span><var>口号</var>口号：</span><input type="text" value="写下振奋人心的口号，吸引更多人才">
+				<var></var>
+			</li>
+		</ul>
+	</div>
+	<script>
+	var obcBtn=document.getElementById('bc-btn');
+	var oGsCont=document.getElementById('gs-cont');
+	var oInput=oGsCont.getElementsByTagName('input')[0];
+	var oVar=oGsCont.getElementsByTagName('var')[0];
+	
+	</script>
+	<div class="gs-r">
+		
+	</div>
+	<div class="bjgs">
+		<h6>编辑公司标签</h6>
+		<p>未添加标签</p>
+		<div class="bj-wtj clearfix" id="bj-cont">
+			<span>客户资源<a href="javascript:;"></a></span>
+			<span>客户资源<a href="javascript:;"></a></span>
+			<span>客户资源<a href="javascript:;"></a></span>
+		</div>
+		<div class="clear"></div>
+		<div class="bj-btn">
+			<input type="text" id='text' value="ddd">
+			<input type="button" id="btn" value="添加">
+		</div>
+		<div class="tj clearfix">
+			<em>推荐：</em>
+			<div class="tj-xx" id='tj-xx'>
+				<span>领导很好</span>
+				<span>领导很好</span>
+				<span>领导很好</span>
+				<span>领导很好</span>
+			</div>
+		</div>
+	</div>
+	<script>
+
+		// var oCont=document.getElementById('bj-cont');
+  //       var oBtn=document.getElementById('btn');
+  //       var oText=document.getElementById('text');
+  //       // oText.onclick=function(){
+  //       // 	oText.value='';
+  //       // }
+  //       function first(oParent){
+  //       if(!oParent)return null;
+  //       return oParent.firstElementChild || oParent.firstChild;
+  //   };
+   //      oBtn.onclick=function(){
+   //      	var ospan=document.createElement('span');
+   //      	ospan.innerHTML=oText.value;
+   //      	var oA=document.createElement('a');
+   //      	oA.onclick=function(){
+   //      		oCont.removeChild(oA.parentNode)
+   //      	}
+			// oA.href= "javascript:;";
+   //      	ospan.appendChild(oA);
+   //      	oCont.appendChild(ospan);
+   //      }
+        // function tjTj(){
+        // 	var oBtn=document.getElementById('tj-btn');
+        // 	var ospan=document.createElement('span');
+        // 	var oA=document.createElement('a');
+        // 	oBtn.onclick=function(){
+        // 		oA.href='javascript';
+        // 		ospan.appendChild(oA);
+        // 		oCont.appendChild(ospan);
+        // 		oBtn.innerHTML=ospan.innerHTML;
+        // 	}
+
+        // }
+        // tjTj();
+   //  var oBtn1=document.getElementById('tj-xx').getElementsByTagName('span');
+   //  	for(var i=0,len=oBtn1.length;i<len;i++){
+   //  		oBtn1[i].index=i;
+   //      oBtn1[i].onclick=function(){
+   //      	var ospan=document.createElement('span');
+   //      	ospan.innerHTML=this.innerHTML;
+   //      	var oA=document.createElement('a');
+   //      	oA.onclick=function(){
+   //      		oCont.removeChild(oA.parentNode)
+   //      	}
+			// oA.href= "javascript:;";
+   //      	ospan.appendChild(oA);
+   //      	oCont.appendChild(ospan);
+    //     }
+    // }
+  
+    	var oCont=document.getElementById('bj-cont');
+        var oBtn=document.getElementById('btn');
+        var oText=document.getElementById('text');
+        // oText.onclick=function(){
+        // 	oText.value='';
+        // }
+        function first(oParent){
+        if(!oParent)return null;
+        return oParent.firstElementChild || oParent.firstChild;
+    }
+        oBtn.onclick=function(){
+        	dd(oText.value);
+   //      	var ospan=document.createElement('span');
+   //      	ospan.innerHTML=this.value;
+   //      	var oA=document.createElement('a');
+   //      	oA.onclick=function(){
+   //      		oCont.removeChild(oA.parentNode)
+   //      	}
+			// oA.href= "javascript:;";
+   //      	ospan.appendChild(oA);
+   //      	oCont.appendChild(ospan);
+        }
+        var oBtn1=document.getElementById('tj-xx').getElementsByTagName('span');
+    	for(var i=0,len=oBtn1.length;i<len;i++){
+    		oBtn1[i].index=i;
+        oBtn1[i].onclick=function(){
+        	dd(this.innerHTML)
+   //      	var ospan=document.createElement('span');
+   //      	ospan.innerHTML=this.innerHTML;
+   //      	var oA=document.createElement('a');
+   //      	oA.onclick=function(){
+   //      		oCont.removeChild(oA.parentNode)
+   //      	}
+			// oA.href= "javascript:;";
+   //      	ospan.appendChild(oA);
+   //      	oCont.appendChild(ospan);
+        }
+    }
+   // }
+
+   function dd(value){
+   			var ospan=document.createElement('span');
+        	ospan.innerHTML=value
+        	var oA=document.createElement('a');
+        	// oA.onclick=function(){
+        	// 	oCont.removeChild(oA.parentNode)
+        	// }
+			oA.href= "javascript:;";
+        	ospan.appendChild(oA);
+        	oCont.appendChild(ospan);
+
+        	
+   }
+  function addEvent(obj,type,fn){
+  	if(obj.addEventListener){
+  		obj.addEventListener(type,fn,false)
+  	}else{
+  		obj.addEventListener('on'+type,fn);
+  	}
+  }
+  addEvent(oCont,'click',function(e){
+  	// var oA1=document.getElmentById('bj-cont').getElementsByTagName('a');
+  	var oEven=e||window.event;
+  	var oTarget=oEven.target||oEven.srcElement;
+  	if(oTarget.tagName.toLowerCase()=='a'){
+  		oCont.removeChild(oTarget.parentNode);
+  	}
+  });
+	</script>
+</div>
+</body>
+</html>
